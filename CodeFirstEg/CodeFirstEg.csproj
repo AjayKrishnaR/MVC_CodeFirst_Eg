@@ -199,6 +199,7 @@
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Data\EmployeeDbcontext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,11 +208,16 @@
     <Compile Include="Migrations\201708141149393_ac.Designer.cs">
       <DependentUpon>201708141149393_ac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708181244599_m1.cs" />
+    <Compile Include="Migrations\201708181244599_m1.Designer.cs">
+      <DependentUpon>201708181244599_m1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Sample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -280,6 +286,9 @@
     <Content Include="Views\Employee\Edit.cshtml" />
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Select.cshtml" />
+    <Content Include="Views\Sample\Create.cshtml" />
+    <Content Include="Views\Sample\SearchResults.cshtml" />
+    <Content Include="Views\Sample\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,6 +304,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708141149393_ac.resx">
       <DependentUpon>201708141149393_ac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181244599_m1.resx">
+      <DependentUpon>201708181244599_m1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

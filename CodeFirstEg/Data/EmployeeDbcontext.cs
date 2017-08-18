@@ -14,5 +14,7 @@ namespace CodeFirstEg.Data
 
         }
         public DbSet<Employee> Employee { get; set; }
+
+        public System.Data.Entity.DbSet<CodeFirstEg.Models.Sample> Samples { get; set; }
     }
 }

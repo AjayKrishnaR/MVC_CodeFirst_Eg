@@ -81,4 +81,5 @@ c:\users\akramachandran\documents\visual studio 2015\Projects\CodeFirstEg\CodeFi
 c:\users\akramachandran\documents\visual studio 2015\Projects\CodeFirstEg\CodeFirstEg\obj\Debug\CodeFirstEg.pdb
 c:\users\akramachandran\documents\visual studio 2015\Projects\CodeFirstEg\CodeFirstEg\obj\Debug\CodeFirstEg.Migrations.ac.resources
 c:\users\akramachandran\documents\visual studio 2015\Projects\CodeFirstEg\CodeFirstEg\obj\Debug\CodeFirstEg.csproj.GenerateResource.Cache
-c:\users\akramachandran\documents\visual studio 2015\Projects\CodeFirstEg\CodeFirstEg\obj\Debug\CodeFirstEg.csprojResolveAssemblyReference.cache
+C:\Users\akramachandran\Documents\Visual Studio 2015\Projects\CodeFirstEg\CodeFirstEg\obj\Debug\CodeFirstEg.csprojResolveAssemblyReference.cache
+C:\Users\akramachandran\Documents\Visual Studio 2015\Projects\CodeFirstEg\CodeFirstEg\obj\Debug\CodeFirstEg.Migrations.m1.resources
