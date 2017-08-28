@@ -15,7 +15,9 @@ namespace CodeFirstEg.Controllers
         EmployeeDbcontext dbContext = new EmployeeDbcontext();
         public ActionResult Index()
         {
-            return View();
+            EmployeeDbcontext dbContext = new EmployeeDbcontext();
+            List<Employee> employess = dbContext.Employee.ToList();
+            return View(employess);
         }
 
         public ActionResult Create()
@@ -62,11 +64,29 @@ namespace CodeFirstEg.Controllers
             return View();
         }
 
-        public ActionResult SearchResults(int Id)
+        public ActionResult SearchResults(String name)
         {
-            Employee employee = dbContext.Employee.Where(c => c.Id == Id).FirstOrDefault();
+            Employee employee = dbContext.Employee.Where(c => c.Name == name).FirstOrDefault();
 
             return PartialView(employee);
+        }
+
+
+        public ActionResult Edit(int Id)
+        {
+            EmployeeDbcontext dbContext = new EmployeeDbcontext();
+            Employee employee = dbContext.Employee.Where(c => c.Id == Id).FirstOrDefault();
+            return View(employee);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Employee emp)
+        {
+            EmployeeDbcontext dbContext = new EmployeeDbcontext();
+            Employee employee = dbContext.Employee.Where(c => c.Id == emp.Id).FirstOrDefault();
+            dbContext.Entry(employee).CurrentValues.SetValues(emp);
+            dbContext.SaveChanges();
+            return RedirectToAction("Index");
         }
 
     }

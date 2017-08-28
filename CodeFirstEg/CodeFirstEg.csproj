@@ -289,6 +289,8 @@
     <Content Include="Views\Sample\Create.cshtml" />
     <Content Include="Views\Sample\SearchResults.cshtml" />
     <Content Include="Views\Sample\Search.cshtml" />
+    <Content Include="Views\Sample\Index.cshtml" />
+    <Content Include="Views\Sample\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

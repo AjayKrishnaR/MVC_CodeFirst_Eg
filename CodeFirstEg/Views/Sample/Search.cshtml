@@ -7,7 +7,7 @@
 
 
 <div>
-   @Html.Label("Id")
+   @Html.Label("Name")
     <div>
         @Html.TextBox("name")
     </div>
@@ -25,7 +25,7 @@
         $('#btnSearch').click(function(){
             $.ajax({
                 url: "/Sample/SearchResults",
-                data:{Id:$('#name').val()},
+                data:{name:$('#name').val()},
                 success:function(result)
                 {
                    // $('#divResult').html($(this).val());
