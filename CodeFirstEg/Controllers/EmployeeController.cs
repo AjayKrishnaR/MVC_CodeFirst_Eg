@@ -40,7 +40,14 @@ namespace CodeFirstEg.Controllers
             }
         }
 
-
+        public JsonResult IsValidName(string Email)
+        {
+            EmployeeDbcontext dbContext = new EmployeeDbcontext();
+            // List<Employee> employess = dbContext.Employee.ToList();
+            Employee employee = dbContext.Employee.Where(c => c.Email == Email).FirstOrDefault();
+            bool isValid = employee != null ? false : true;
+            return Json(isValid, JsonRequestBehavior.AllowGet);
+        }
 
 
         public ActionResult Edit(int Id)
@@ -73,6 +80,8 @@ namespace CodeFirstEg.Controllers
             return View();
         }
 
+       
 
-    }
+
+        }
 }
